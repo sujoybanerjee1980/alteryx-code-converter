@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+python-multipart
+pydantic
+python-dotenv
+pandas
+requests
+python-csv
+shutil
+fpdf
+langchain
+langchain-openai
+google-generativeai
+google-cloud-aiplatform
+python-docx
