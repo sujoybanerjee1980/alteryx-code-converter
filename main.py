@@ -28,7 +28,7 @@ with open("config.json", "r") as config_file:
 # DEPLOYMENT_ID = config["default_model"]
 
 # llm_client = Agenai(api_key=API_KEY, azure_endpoint=API_BASE, api_version=API_VERSION)
-# Ggenai.configure(api_key="AIzaSyCv3b6uhEf2jk88tcrT553JtGYb6FxvXu0")
+# Ggenai.configure(api_key="...")
 
 
 # API ROUTES
