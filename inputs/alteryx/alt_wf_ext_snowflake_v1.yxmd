@@ -1,0 +1,492 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.1" RunE2="T">
+  <Nodes>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File />
+          <FormatSpecificOptions UseDcm="true" Format="23" RecordLimit="">
+            <Query>SELECT * FROM "SNOWFLAKE_LEARNING_DB"."DBT_RSHARMA"."CHECK_CALL_CENTRE"</Query>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>True</CacheData>
+            <Table />
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <Connection DcmType="ConnectionId" DcmTitle="ConnectSnowflake — SnowflakeAuth" DcmSchemaId="database-odbc-dsn-snowflake">0059d005-3a2f-4daf-9bfe-4c849d208141</Connection>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:ConnectSnowflake — SnowflakeAuth
+Query=SELECT * FROM "SNOWFLAKE_LEA...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CC_CALL_CENTER_SK" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_CALL_CENTER_ID" size="16" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_REC_START_DATE" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="Date" />
+            <Field name="CC_REC_END_DATE" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="Date" />
+            <Field name="CC_CLOSED_DATE_SK" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_OPEN_DATE_SK" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_NAME" size="50" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_CLASS" size="50" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_EMPLOYEES" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_SQ_FT" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_HOURS" size="20" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_MANAGER" size="40" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_MKT_ID" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_MKT_CLASS" size="50" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_MKT_DESC" size="100" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_MARKET_MANAGER" size="40" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_DIVISION" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_DIVISION_NAME" size="50" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_COMPANY" scale="0" size="39" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_COMPANY_NAME" size="50" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_STREET_NUMBER" size="10" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_STREET_NAME" size="60" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_STREET_TYPE" size="15" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_SUITE_NUMBER" size="10" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_CITY" size="60" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_COUNTY" size="30" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_STATE" size="2" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_ZIP" size="10" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_COUNTRY" size="20" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="V_WString" />
+            <Field name="CC_GMT_OFFSET" scale="2" size="7" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+            <Field name="CC_TAX_PERCENTAGE" scale="2" size="7" source="File: SELECT * FROM &quot;SNOWFLAKE_LEARNING_DB&quot;.&quot;DBT_RSHARMA&quot;.&quot;CHECK_CALL_CENTRE&quot;" type="FixedDecimal" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="198" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="CC_COUNTRY" order="Ascending" />
+            <Field field="CC_DIVISION_NAME" order="Ascending" />
+            <Field field="CC_NAME" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>CC_COUNTRY - Ascending
+CC_DIVISION_NAME - Ascending
+CC_NAME - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="Uppercase([CC_NAME])" field="CC_NAME" size="50" type="V_WString" enabled="true" />
+            <FormulaField expression="LowerCase([CC_COUNTY])" field="CC_CAP_COUNTY" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[CC_NAME = Uppercase([CC_NAME])
+CC_CAP_COUNTY = LowerCase([CC_COUNTY])
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="606" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="CC_COUNTRY" action="GroupBy" rename="CC_COUNTRY" />
+            <SummarizeField field="CC_DIVISION" action="GroupBy" rename="CC_DIVISION" />
+            <SummarizeField field="CC_NAME" action="GroupBy" rename="CC_NAME" />
+            <SummarizeField field="CC_EMPLOYEES" action="Sum" rename="Sum_CC_EMPLOYEES" />
+            <SummarizeField field="CC_CITY" action="CountDistinct" rename="CountDistinct_CC_CITY" />
+            <SummarizeField field="CC_COUNTY" action="CountDistinct" rename="CountDistinct_CC_COUNTY" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="762" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File />
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="65">
+            <TableStyle>Quoted</TableStyle>
+            <Table>snowflake_learning_db.dbt_rsharma.cc_emp_aggregate</Table>
+            <CompressionType>GZip</CompressionType>
+            <IgnoreDropTableSQLErrors>True</IgnoreDropTableSQLErrors>
+            <NumThreads>4</NumThreads>
+            <ChunkSize>64</ChunkSize>
+            <OutputOption>Append</OutputOption>
+            <AppendMap>
+              <AppendMapping mode="ByName" />
+            </AppendMap>
+            <PostSQL />
+            <AwsConnection DcmType="ConnectionId">
+            </AwsConnection>
+            <OdbcConnection DcmType="ConnectionId" DcmTitle="Snowflake Bulk (Local Staging Table) — SnowflakeAuth" DcmSchemaId="database-bulk-dsn-snowflake-localstaging-table">93de16fa-5b63-4f11-beac-4ac144e59e03</OdbcConnection>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>dcm:Snowflake Bulk (Local Staging Table) — SnowflakeAuth
+Table=snowflake_learning_db.dbt_rs...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="546" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>CC_EMPLOYEES</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-09-02 15:31:21</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2025-09-02 15:31:21</StartDate>
+              <EndDate>2025-09-02 15:31:21</EndDate>
+              <Operand>10</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>( [CC_EMPLOYEES] &gt;= 10 ) AND ( [CC_EMPLOYEES] &gt;= 10 )</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;More Than 10 Employees&quot;" field="EMP_CATEGORY" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[EMP_CATEGORY = "More Than 10 Employees"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Less Than 10 Employees&quot;" field="EMP_CATEGORY" size="1073741823" type="V_WString" enabled="true" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[EMP_CATEGORY = "Less Than 10 Employees"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="894" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\RajeevSharma\Documents\GenAI PoC\Alteryx\Data\alt_CC_mt10_emps.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>alt_CC_mt10_emps.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="858" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\RajeevSharma\Documents\GenAI PoC\Alteryx\Data\alt_CC_lessThan10_emps.csv</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+            <WriteBOM>True</WriteBOM>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>alt_CC_lessThan10_emps.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="42" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\RajeevSharma\Documents\GenAI PoC\Alteryx\Data\alt_emp_out_mt5.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>alt_emp_out_mt5.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=10001" type="Int32" />
+            <Field name="emp_id" size="254" source="File: C:\Users\RajeevSharma\Documents\GenAI PoC\sample_emp_data.csv" type="V_String" />
+            <Field name="name" size="254" source="File: C:\Users\RajeevSharma\Documents\GenAI PoC\sample_emp_data.csv" type="V_String" />
+            <Field name="city" size="254" source="File: C:\Users\RajeevSharma\Documents\GenAI PoC\sample_emp_data.csv" type="V_String" />
+            <Field name="doj" size="254" source="File: C:\Users\RajeevSharma\Documents\GenAI PoC\sample_emp_data.csv" type="V_String" />
+            <Field name="salary" size="254" source="File: C:\Users\RajeevSharma\Documents\GenAI PoC\sample_emp_data.csv" type="V_String" />
+            <Field name="salary_sqrt" source="Formula: sqrt(ToNumber([salary]))" type="Float" />
+            <Field name="new_junk_id" source="Formula: [RecordID]+ToNumber([emp_id])" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="186" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>salary</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2025-09-02 15:38:07</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2025-09-02 15:38:07</StartDate>
+              <EndDate>2025-09-02 15:38:07</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>( !IsNull([salary]) ) AND ( !IsNull([salary]) )</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="342" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="19">C:\Users\RajeevSharma\Documents\GenAI PoC\Alteryx\Data\alt_emp_out_mt5_recopy.yxdb</File>
+          <Passwords />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <SuppressBlankFile>False</SuppressBlankFile>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>alt_emp_out_mt5_recopy.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="False" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="True" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>alt_wf_ext_snowflake_v1</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="ab77697a-ccfd-4230-af24-08c1ea9b5b66" />
+      <Telemetry>
+        <PreviousWorkflowId value="5496907e-4b6d-4b25-bd7f-09f413e620ec" />
+        <OriginWorkflowId value="5496907e-4b6d-4b25-bd7f-09f413e620ec" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
